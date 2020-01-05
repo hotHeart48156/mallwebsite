@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsEmployInfoEntity">
+        <table name="ums_employ_info" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="age">
+                <column name="age" nullable="false" precision="11"/>
+            </basic>
+            <basic name="gender">
+                <column name="gender" nullable="false"/>
+            </basic>
+            <basic name="hobby">
+                <column name="hobby" nullable="false"/>
+            </basic>
+            <basic name="peoplenote">
+                <column name="peoplenote" nullable="false"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" nullable="false"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false"/>
+            </basic>
+            <basic name="guide1">
+                <column name="guide1" nullable="false"/>
+            </basic>
+            <basic name="guide">
+                <column name="guide" nullable="false"/>
+            </basic>
+            <basic name="suggestion">
+                <column name="suggestion" nullable="false"/>
+            </basic>
+            <basic name="guide2">
+                <column name="guide2" nullable="false"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

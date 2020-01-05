@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.admin.AdminSysLogininforEntity">
+        <table name="admin_sys_logininfor" schema="admin" catalog=""/>
+        <attributes>
+            <id name="infoId">
+                <column name="info_id" precision="20"/>
+            </id>
+            <basic name="loginName">
+                <column name="login_name" nullable="false" length="50"/>
+            </basic>
+            <basic name="ipaddr">
+                <column name="ipaddr" nullable="false" length="50"/>
+            </basic>
+            <basic name="loginLocation">
+                <column name="login_location" nullable="false"/>
+            </basic>
+            <basic name="browser">
+                <column name="browser" nullable="false" length="50"/>
+            </basic>
+            <basic name="os">
+                <column name="os" nullable="false" length="50"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="1"/>
+            </basic>
+            <basic name="msg">
+                <column name="msg" nullable="false"/>
+            </basic>
+            <basic name="loginTime">
+                <column name="login_time" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

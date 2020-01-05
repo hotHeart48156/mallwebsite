@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.orders.OmsOrderOperateHistoryEntity">
+        <table name="oms_order_operate_history" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="orderId">
+                <column name="order_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="operateMan">
+                <column name="operate_man" nullable="false" length="100"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="orderStatus">
+                <column name="order_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false" length="500"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="preStatus">
+                <column name="pre_status" nullable="false" precision="4"/>
+            </basic>
+            <basic name="orderItemId">
+                <column name="order_item_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

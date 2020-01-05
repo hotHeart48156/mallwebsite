@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.BakCategoryEntity">
+        <table name="bak_category" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="name">
+                <column name="name" length="63"/>
+            </basic>
+            <basic name="keywords">
+                <column name="keywords" length="1023"/>
+            </basic>
+            <basic name="descs">
+                <column name="descs" nullable="false"/>
+            </basic>
+            <basic name="pid">
+                <column name="pid" precision="11"/>
+            </basic>
+            <basic name="iconUrl">
+                <column name="icon_url" nullable="false"/>
+            </basic>
+            <basic name="picUrl">
+                <column name="pic_url" nullable="false"/>
+            </basic>
+            <basic name="level">
+                <column name="level" nullable="false"/>
+            </basic>
+            <basic name="sortOrder">
+                <column name="sort_order" nullable="false" precision="3"/>
+            </basic>
+            <basic name="addTime">
+                <column name="add_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="deleted">
+                <column name="deleted" nullable="false" precision="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

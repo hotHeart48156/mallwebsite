@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.admin.AdminSysUserPostEntity">
+        <table name="admin_sys_user_post" schema="admin" catalog=""/>
+        <id-class class="com.smart.website.admin.AdminSysUserPostEntityPK"/>
+        <attributes>
+            <id name="userId">
+                <column name="user_id" precision="20"/>
+            </id>
+            <id name="postId">
+                <column name="post_id" precision="20"/>
+            </id>
+        </attributes>
+    </entity>
+</entity-mappings>

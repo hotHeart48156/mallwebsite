@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/commons" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/cache/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/core/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/message/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/security/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/persistence/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/security/shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/cache/redis/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/persistence/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/account/app/pom.xml" />
+        <option value="$PROJECT_DIR$/account/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/account/web/pom.xml" />
+        <option value="$PROJECT_DIR$/activite/app/pom.xml" />
+        <option value="$PROJECT_DIR$/activite/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/activite/web/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/app/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/web/pom.xml" />
+        <option value="$PROJECT_DIR$/order/app/pom.xml" />
+        <option value="$PROJECT_DIR$/order/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/order/web/pom.xml" />
+        <option value="$PROJECT_DIR$/pay/app/pom.xml" />
+        <option value="$PROJECT_DIR$/pay/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/pay/web/pom.xml" />
+        <option value="$PROJECT_DIR$/product/app/pom.xml" />
+        <option value="$PROJECT_DIR$/product/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/product/web/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" project-jdk-name="12" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>

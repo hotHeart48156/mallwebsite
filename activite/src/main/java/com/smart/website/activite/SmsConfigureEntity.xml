@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.activite.SmsConfigureEntity">
+        <table name="sms_configure" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="color">
+                <column name="color" nullable="false" length="15"/>
+            </basic>
+            <basic name="size">
+                <column name="size" nullable="false" length="100"/>
+            </basic>
+            <basic name="costprice">
+                <column name="costprice" precision="2"/>
+            </basic>
+            <basic name="price">
+                <column name="price" precision="2"/>
+            </basic>
+            <basic name="yprice">
+                <column name="yprice" precision="2"/>
+            </basic>
+            <basic name="img">
+                <column name="img"/>
+            </basic>
+            <basic name="pid">
+                <column name="pid" precision="11"/>
+            </basic>
+            <basic name="num">
+                <column name="num" precision="11"/>
+            </basic>
+            <basic name="unit">
+                <column name="unit" length="30"/>
+            </basic>
+            <basic name="bargainPrice">
+                <column name="bargain_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="status">
+                <column name="status" precision="4"/>
+            </basic>
+            <basic name="attribute">
+                <column name="attribute" nullable="false"/>
+            </basic>
+            <basic name="recycle">
+                <column name="recycle" precision="4"/>
+            </basic>
+            <basic name="totalNum">
+                <column name="total_num" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

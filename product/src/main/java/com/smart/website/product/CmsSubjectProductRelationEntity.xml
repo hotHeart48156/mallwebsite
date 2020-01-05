@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.CmsSubjectProductRelationEntity">
+        <table name="cms_subject_product_relation" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="subjectId">
+                <column name="subject_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

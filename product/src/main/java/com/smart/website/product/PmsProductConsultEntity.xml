@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.PmsProductConsultEntity">
+        <table name="pms_product_consult" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="10"/>
+            </id>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="goodsName">
+                <column name="goods_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" precision="11"/>
+            </basic>
+            <basic name="memberName">
+                <column name="member_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false"/>
+            </basic>
+            <basic name="consultContent">
+                <column name="consult_content" nullable="false"/>
+            </basic>
+            <basic name="consultAddtime">
+                <column name="consult_addtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="consultReply">
+                <column name="consult_reply" nullable="false"/>
+            </basic>
+            <basic name="consultReplyTime">
+                <column name="consult_reply_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="isanonymous">
+                <column name="isanonymous" nullable="false" precision="1"/>
+            </basic>
+            <basic name="isDel">
+                <column name="is_del" nullable="false" precision="1"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+            <basic name="attr">
+                <column name="attr" nullable="false"/>
+            </basic>
+            <basic name="stars">
+                <column name="stars" nullable="false" precision="11"/>
+            </basic>
+            <basic name="orderId">
+                <column name="order_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="4"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

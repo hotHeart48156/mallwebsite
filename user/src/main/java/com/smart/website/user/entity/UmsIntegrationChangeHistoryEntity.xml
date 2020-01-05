@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsIntegrationChangeHistoryEntity">
+        <table name="ums_integration_change_history" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="changeType">
+                <column name="change_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="changeCount">
+                <column name="change_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="operateMan">
+                <column name="operate_man" nullable="false" length="100"/>
+            </basic>
+            <basic name="operateNote">
+                <column name="operate_note" nullable="false" length="200"/>
+            </basic>
+            <basic name="sourceType">
+                <column name="source_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.orders.PictureEntity">
+        <table name="picture" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="deleteUrl">
+                <column name="delete_url" nullable="false"/>
+            </basic>
+            <basic name="filename">
+                <column name="filename" nullable="false"/>
+            </basic>
+            <basic name="height">
+                <column name="height" nullable="false"/>
+            </basic>
+            <basic name="size">
+                <column name="size" nullable="false"/>
+            </basic>
+            <basic name="url">
+                <column name="url" nullable="false"/>
+            </basic>
+            <basic name="username">
+                <column name="username" nullable="false"/>
+            </basic>
+            <basic name="width">
+                <column name="width" nullable="false"/>
+            </basic>
+            <basic name="md5Code">
+                <column name="md5code" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

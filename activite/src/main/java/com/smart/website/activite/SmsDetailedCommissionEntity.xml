@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.activite.SmsDetailedCommissionEntity">
+        <table name="sms_detailed_commission" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="userid">
+                <column name="userid" nullable="false" precision="50"/>
+            </basic>
+            <basic name="sNo">
+                <column name="sNo" nullable="false"/>
+            </basic>
+            <basic name="money">
+                <column name="money" nullable="false" precision="2"/>
+            </basic>
+            <basic name="sMoney">
+                <column name="s_money" nullable="false" precision="2"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="2"/>
+            </basic>
+            <basic name="addtime">
+                <column name="addtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="2"/>
+            </basic>
+            <basic name="referee">
+                <column name="Referee" nullable="false" length="50"/>
+            </basic>
+            <basic name="recycle">
+                <column name="recycle" nullable="false" precision="2"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

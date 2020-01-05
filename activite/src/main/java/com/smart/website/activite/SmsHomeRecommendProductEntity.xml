@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.activite.SmsHomeRecommendProductEntity">
+        <table name="sms_home_recommend_product" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productName">
+                <column name="product_name" nullable="false" length="128"/>
+            </basic>
+            <basic name="recommendStatus">
+                <column name="recommend_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

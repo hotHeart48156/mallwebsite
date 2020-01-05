@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.PmsSmallNaviconCategoryEntity">
+        <table name="pms_small_navicon_category" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="title">
+                <column name="title" nullable="false" length="200"/>
+            </basic>
+            <basic name="icon">
+                <column name="icon" nullable="false" length="500"/>
+            </basic>
+            <basic name="summary">
+                <column name="summary" nullable="false" length="200"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false" length="50"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="10"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="pcUrl">
+                <column name="pc_url" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

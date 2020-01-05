@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.account.SysAlipayConfigEntity">
+        <table name="sys_alipay_config" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="appId">
+                <column name="app_id" nullable="false"/>
+            </basic>
+            <basic name="charset">
+                <column name="charset" nullable="false"/>
+            </basic>
+            <basic name="format">
+                <column name="format" nullable="false"/>
+            </basic>
+            <basic name="gatewayUrl">
+                <column name="gateway_url" nullable="false"/>
+            </basic>
+            <basic name="notifyUrl">
+                <column name="notify_url" nullable="false"/>
+            </basic>
+            <basic name="privateKey">
+                <column name="private_key" nullable="false"/>
+            </basic>
+            <basic name="publicKey">
+                <column name="public_key" nullable="false"/>
+            </basic>
+            <basic name="returnUrl">
+                <column name="return_url" nullable="false"/>
+            </basic>
+            <basic name="signType">
+                <column name="sign_type" nullable="false"/>
+            </basic>
+            <basic name="sysServiceProviderId">
+                <column name="sys_service_provider_id" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

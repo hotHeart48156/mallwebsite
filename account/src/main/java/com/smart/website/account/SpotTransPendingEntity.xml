@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.account.SpotTransPendingEntity">
+        <table name="spot_trans_pending" schema="account" catalog=""/>
+        <attributes>
+            <id name="spotTransId">
+                <column name="spot_trans_id" precision="200"/>
+            </id>
+            <basic name="exchSymbolId">
+                <column name="exch_symbol_id" nullable="false" length="32"/>
+            </basic>
+            <basic name="symbol">
+                <column name="symbol" nullable="false" length="50"/>
+            </basic>
+            <basic name="side">
+                <column name="side" nullable="false" precision="1"/>
+            </basic>
+            <basic name="transType">
+                <column name="trans_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="source">
+                <column name="source" nullable="false" precision="1"/>
+            </basic>
+            <basic name="exchCode">
+                <column name="exch_code" nullable="false" length="50"/>
+            </basic>
+            <basic name="exchAcctId">
+                <column name="exch_acct_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="accountBindId">
+                <column name="account_bind_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="userAccountId">
+                <column name="user_account_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="orderId">
+                <column name="order_id" nullable="false" length="100"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="2"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="18"/>
+            </basic>
+            <basic name="amount">
+                <column name="amount" nullable="false" precision="18"/>
+            </basic>
+            <basic name="leftAmount">
+                <column name="left_amount" nullable="false" precision="18"/>
+            </basic>
+            <basic name="filledAmount">
+                <column name="filled_amount" nullable="false" precision="18"/>
+            </basic>
+            <basic name="priceAvg">
+                <column name="price_avg" nullable="false" precision="18"/>
+            </basic>
+            <basic name="filledCashAmount">
+                <column name="filled_cash_amount" nullable="false" precision="18"/>
+            </basic>
+            <basic name="marketCashAmount">
+                <column name="market_cash_amount" nullable="false" precision="18"/>
+            </basic>
+            <basic name="thirdCreateTime">
+                <column name="third_create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="thirdUpdateTime">
+                <column name="third_update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+            <basic name="baseAccountCoinId">
+                <column name="base_account_coin_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="quoteAccountCoinId">
+                <column name="quote_account_coin_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="synFeeStatus">
+                <column name="syn_fee_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="lastUpdateFromIp">
+                <column name="last_update_from_ip" nullable="false" length="200"/>
+            </basic>
+            <basic name="synPlatfomrFeeStatus">
+                <column name="syn_platfomr_fee_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="accountDealFee">
+                <column name="account_deal_fee" nullable="false" precision="18"/>
+            </basic>
+            <basic name="spotDealFee">
+                <column name="spot_deal_fee" nullable="false" precision="18"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

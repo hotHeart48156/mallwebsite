@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.account.SysSchoolEntity">
+        <table name="sys_school" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="longitude">
+                <column name="longitude" nullable="false" length="40"/>
+            </basic>
+            <basic name="latitude">
+                <column name="latitude" nullable="false" length="40"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="40"/>
+            </basic>
+            <basic name="province">
+                <column name="province" nullable="false" length="20"/>
+            </basic>
+            <basic name="city">
+                <column name="city" nullable="false" length="20"/>
+            </basic>
+            <basic name="region">
+                <column name="region" nullable="false" length="20"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false"/>
+            </basic>
+            <basic name="hot">
+                <column name="hot" nullable="false" precision="11"/>
+            </basic>
+            <basic name="is211">
+                <column name="is211" nullable="false" precision="11"/>
+            </basic>
+            <basic name="is985">
+                <column name="is985" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

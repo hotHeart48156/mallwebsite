@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.PmsProductCategoryEntity">
+        <table name="pms_product_category" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="parentId">
+                <column name="parent_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="64"/>
+            </basic>
+            <basic name="level">
+                <column name="level" nullable="false" precision="1"/>
+            </basic>
+            <basic name="productCount">
+                <column name="product_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="productUnit">
+                <column name="product_unit" nullable="false" length="64"/>
+            </basic>
+            <basic name="navStatus">
+                <column name="nav_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="showStatus">
+                <column name="show_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="indexStatus">
+                <column name="index_status" precision="1"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="11"/>
+            </basic>
+            <basic name="icon">
+                <column name="icon" nullable="false"/>
+            </basic>
+            <basic name="keywords">
+                <column name="keywords" nullable="false"/>
+            </basic>
+            <basic name="description">
+                <column name="description" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

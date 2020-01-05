@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.BakGoodsEntity">
+        <table name="bak_goods" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="goodsSn">
+                <column name="goods_sn" length="63"/>
+            </basic>
+            <basic name="name">
+                <column name="name" length="127"/>
+            </basic>
+            <basic name="categoryId">
+                <column name="category_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="brandId">
+                <column name="brand_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="gallery">
+                <column name="gallery" nullable="false" length="1023"/>
+            </basic>
+            <basic name="keywords">
+                <column name="keywords" nullable="false"/>
+            </basic>
+            <basic name="brief">
+                <column name="brief" nullable="false"/>
+            </basic>
+            <basic name="isOnSale">
+                <column name="is_on_sale" nullable="false" precision="1"/>
+            </basic>
+            <basic name="sortOrder">
+                <column name="sort_order" nullable="false" precision="4"/>
+            </basic>
+            <basic name="picUrl">
+                <column name="pic_url" nullable="false"/>
+            </basic>
+            <basic name="shareUrl">
+                <column name="share_url" nullable="false"/>
+            </basic>
+            <basic name="isNew">
+                <column name="is_new" nullable="false" precision="1"/>
+            </basic>
+            <basic name="isHot">
+                <column name="is_hot" nullable="false" precision="1"/>
+            </basic>
+            <basic name="unit">
+                <column name="unit" nullable="false" length="31"/>
+            </basic>
+            <basic name="counterPrice">
+                <column name="counter_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="retailPrice">
+                <column name="retail_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="detail">
+                <column name="detail" nullable="false"/>
+            </basic>
+            <basic name="addTime">
+                <column name="add_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="deleted">
+                <column name="deleted" nullable="false" precision="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

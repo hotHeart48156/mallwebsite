@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.PmsFeightTemplateEntity">
+        <table name="pms_feight_template" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="64"/>
+            </basic>
+            <basic name="chargeType">
+                <column name="charge_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="firstWeight">
+                <column name="first_weight" nullable="false" precision="2"/>
+            </basic>
+            <basic name="firstFee">
+                <column name="first_fee" nullable="false" precision="2"/>
+            </basic>
+            <basic name="continueWeight">
+                <column name="continue_weight" nullable="false" precision="2"/>
+            </basic>
+            <basic name="continmeFee">
+                <column name="continme_fee" nullable="false" precision="2"/>
+            </basic>
+            <basic name="dest">
+                <column name="dest" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

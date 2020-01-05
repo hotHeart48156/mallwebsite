@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.admin.AdminSysConfigEntity">
+        <table name="admin_sys_config" schema="admin" catalog=""/>
+        <attributes>
+            <id name="configId">
+                <column name="config_id" precision="5"/>
+            </id>
+            <basic name="configName">
+                <column name="config_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="configKey">
+                <column name="config_key" nullable="false" length="100"/>
+            </basic>
+            <basic name="configValue">
+                <column name="config_value" nullable="false" length="500"/>
+            </basic>
+            <basic name="configType">
+                <column name="config_type" nullable="false" length="1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

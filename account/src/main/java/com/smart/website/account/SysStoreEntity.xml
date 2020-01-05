@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.account.SysStoreEntity">
+        <table name="sys_store" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="smsQuantity">
+                <column name="sms_quantity" nullable="false" precision="20"/>
+            </basic>
+            <basic name="registerType">
+                <column name="register_type" nullable="false" precision="6"/>
+            </basic>
+            <basic name="expireTime">
+                <column name="expire_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="tryTime">
+                <column name="try_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="contactMobile">
+                <column name="contact_mobile" nullable="false" length="11"/>
+            </basic>
+            <basic name="addressProvince">
+                <column name="address_province" nullable="false" precision="20"/>
+            </basic>
+            <basic name="buyPlanTimes">
+                <column name="buy_plan_times" nullable="false" precision="20"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="isChecked">
+                <column name="is_checked" nullable="false" precision="6"/>
+            </basic>
+            <basic name="isDeleted">
+                <column name="is_deleted" nullable="false" precision="6"/>
+            </basic>
+            <basic name="servicePhone">
+                <column name="service_phone" nullable="false" length="30"/>
+            </basic>
+            <basic name="addressLat">
+                <column name="address_lat" nullable="false" length="40"/>
+            </basic>
+            <basic name="contactName">
+                <column name="contact_name" nullable="false" length="20"/>
+            </basic>
+            <basic name="deleteTime">
+                <column name="delete_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="diyProfile">
+                <column name="diy_profile" nullable="false"/>
+            </basic>
+            <basic name="industryTwo">
+                <column name="industry_two" nullable="false" precision="20"/>
+            </basic>
+            <basic name="isStar">
+                <column name="is_star" nullable="false" precision="6"/>
+            </basic>
+            <basic name="isTry">
+                <column name="is_try" nullable="false" precision="6"/>
+            </basic>
+            <basic name="logo">
+                <column name="logo" nullable="false"/>
+            </basic>
+            <basic name="addressDetail">
+                <column name="address_detail" nullable="false" length="100"/>
+            </basic>
+            <basic name="planId">
+                <column name="plan_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="supportName">
+                <column name="support_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="50"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="6"/>
+            </basic>
+            <basic name="uid">
+                <column name="uid" nullable="false" precision="6"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="30"/>
+            </basic>
+            <basic name="contactQq">
+                <column name="contact_qq" nullable="false" length="11"/>
+            </basic>
+            <basic name="addressLng">
+                <column name="address_lng" nullable="false" length="40"/>
+            </basic>
+            <basic name="lastLoginTime">
+                <column name="last_login_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="supportPhone">
+                <column name="support_phone" nullable="false" length="30"/>
+            </basic>
+            <basic name="addressArea">
+                <column name="address_area" nullable="false" precision="20"/>
+            </basic>
+            <basic name="contactQrcode">
+                <column name="contact_qrcode" nullable="false"/>
+            </basic>
+            <basic name="description">
+                <column name="description" nullable="false"/>
+            </basic>
+            <basic name="industryOne">
+                <column name="industry_one" nullable="false" precision="20"/>
+            </basic>
+            <basic name="addressCity">
+                <column name="address_city" nullable="false" precision="20"/>
+            </basic>
+            <basic name="collect">
+                <column name="collect" nullable="false" precision="11"/>
+            </basic>
+            <basic name="hit">
+                <column name="hit" nullable="false" precision="11"/>
+            </basic>
+            <basic name="goodsCount">
+                <column name="goods_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="memberCount">
+                <column name="member_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="orderCount">
+                <column name="order_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="payAmount">
+                <column name="pay_amount" nullable="false" precision="10"/>
+            </basic>
+            <basic name="articleCount">
+                <column name="article_count" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

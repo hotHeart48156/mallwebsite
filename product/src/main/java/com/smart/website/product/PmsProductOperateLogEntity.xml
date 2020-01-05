@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.PmsProductOperateLogEntity">
+        <table name="pms_product_operate_log" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="priceOld">
+                <column name="price_old" nullable="false" precision="2"/>
+            </basic>
+            <basic name="priceNew">
+                <column name="price_new" nullable="false" precision="2"/>
+            </basic>
+            <basic name="salePriceOld">
+                <column name="sale_price_old" nullable="false" precision="2"/>
+            </basic>
+            <basic name="salePriceNew">
+                <column name="sale_price_new" nullable="false" precision="2"/>
+            </basic>
+            <basic name="giftPointOld">
+                <column name="gift_point_old" nullable="false" precision="11"/>
+            </basic>
+            <basic name="giftPointNew">
+                <column name="gift_point_new" nullable="false" precision="11"/>
+            </basic>
+            <basic name="usePointLimitOld">
+                <column name="use_point_limit_old" nullable="false" precision="11"/>
+            </basic>
+            <basic name="usePointLimitNew">
+                <column name="use_point_limit_new" nullable="false" precision="11"/>
+            </basic>
+            <basic name="operateMan">
+                <column name="operate_man" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.activite.SmsGroupEntity">
+        <table name="sms_group" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="goodsName">
+                <column name="goods_name" nullable="false"/>
+            </basic>
+            <basic name="originPrice">
+                <column name="origin_price" nullable="false" precision="10"/>
+            </basic>
+            <basic name="groupPrice">
+                <column name="group_price" nullable="false" precision="10"/>
+            </basic>
+            <basic name="startTime">
+                <column name="start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endTime">
+                <column name="end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="hours">
+                <column name="hours" nullable="false" precision="11"/>
+            </basic>
+            <basic name="peoples">
+                <column name="peoples" nullable="false" precision="11"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="11"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="maxPeople">
+                <column name="max_people" nullable="false" precision="11"/>
+            </basic>
+            <basic name="limitGoods">
+                <column name="limit_goods" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

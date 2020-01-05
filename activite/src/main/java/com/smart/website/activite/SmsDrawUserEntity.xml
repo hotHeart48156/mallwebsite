@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.activite.SmsDrawUserEntity">
+        <table name="sms_draw_user" schema="activiti" catalog=""/>
+        <attributes>
+            <basic name="id">
+                <column name="id" precision="11"/>
+            </basic>
+            <basic name="drawId">
+                <column name="draw_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id" nullable="false" precision="30"/>
+            </basic>
+            <basic name="time">
+                <column name="time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="role">
+                <column name="role" nullable="false" length="30"/>
+            </basic>
+            <basic name="lotteryStatus">
+                <column name="lottery_status" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

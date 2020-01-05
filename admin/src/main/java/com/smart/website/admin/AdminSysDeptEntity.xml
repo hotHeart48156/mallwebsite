@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.admin.AdminSysDeptEntity">
+        <table name="admin_sys_dept" schema="admin" catalog=""/>
+        <attributes>
+            <id name="deptId">
+                <column name="dept_id" precision="20"/>
+            </id>
+            <basic name="parentId">
+                <column name="parent_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="ancestors">
+                <column name="ancestors" nullable="false" length="50"/>
+            </basic>
+            <basic name="deptName">
+                <column name="dept_name" nullable="false" length="30"/>
+            </basic>
+            <basic name="orderNum">
+                <column name="order_num" nullable="false" precision="4"/>
+            </basic>
+            <basic name="leader">
+                <column name="leader" nullable="false" length="20"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" nullable="false" length="11"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false" length="50"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="1"/>
+            </basic>
+            <basic name="delFlag">
+                <column name="del_flag" nullable="false" length="1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

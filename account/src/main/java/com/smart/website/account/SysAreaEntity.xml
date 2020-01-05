@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.account.SysAreaEntity">
+        <table name="sys_area" schema="account" catalog=""/>
+        <attributes>
+            <basic name="id">
+                <column name="id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="pid">
+                <column name="pid" nullable="false" precision="20"/>
+            </basic>
+            <basic name="deep">
+                <column name="deep" nullable="false" precision="11"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="pinyinPrefix">
+                <column name="pinyin_prefix" nullable="false"/>
+            </basic>
+            <basic name="pinyin">
+                <column name="pinyin" nullable="false"/>
+            </basic>
+            <basic name="extId">
+                <column name="ext_id" nullable="false"/>
+            </basic>
+            <basic name="extName">
+                <column name="ext_name" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.product.PmsFavoriteEntity">
+        <table name="pms_favorite" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="addTime">
+                <column name="add_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="type">
+                <column name="type" precision="11"/>
+            </basic>
+            <basic name="objId">
+                <column name="obj_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="meno1">
+                <column name="meno1" nullable="false"/>
+            </basic>
+            <basic name="meno2">
+                <column name="meno2" nullable="false"/>
+            </basic>
+            <basic name="meno3">
+                <column name="meno3" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.activite.SmsFlashPromotionProductRelationEntity">
+        <table name="sms_flash_promotion_product_relation" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="flashPromotionId">
+                <column name="flash_promotion_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="flashPromotionSessionId">
+                <column name="flash_promotion_session_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="flashPromotionPrice">
+                <column name="flash_promotion_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="flashPromotionCount">
+                <column name="flash_promotion_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="flashPromotionLimit">
+                <column name="flash_promotion_limit" nullable="false" precision="11"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

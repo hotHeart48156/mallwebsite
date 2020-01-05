@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.orders.OmsOrderSettingEntity">
+        <table name="oms_order_setting" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="flashOrderOvertime">
+                <column name="flash_order_overtime" nullable="false" precision="11"/>
+            </basic>
+            <basic name="normalOrderOvertime">
+                <column name="normal_order_overtime" nullable="false" precision="11"/>
+            </basic>
+            <basic name="confirmOvertime">
+                <column name="confirm_overtime" nullable="false" precision="11"/>
+            </basic>
+            <basic name="finishOvertime">
+                <column name="finish_overtime" nullable="false" precision="11"/>
+            </basic>
+            <basic name="commentOvertime">
+                <column name="comment_overtime" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.orders.OmsOrderEntity">
+        <table name="oms_order" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="memberId">
+                <column name="member_id" precision="20"/>
+            </basic>
+            <basic name="couponId">
+                <column name="coupon_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="orderSn">
+                <column name="order_sn" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="memberUsername">
+                <column name="member_username" nullable="false" length="512"/>
+            </basic>
+            <basic name="totalAmount">
+                <column name="total_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="payAmount">
+                <column name="pay_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="freightAmount">
+                <column name="freight_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="promotionAmount">
+                <column name="promotion_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="integrationAmount">
+                <column name="integration_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="couponAmount">
+                <column name="coupon_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="discountAmount">
+                <column name="discount_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="payType">
+                <column name="pay_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="sourceType">
+                <column name="source_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="orderType">
+                <column name="order_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="deliveryCompany">
+                <column name="delivery_company" nullable="false" length="64"/>
+            </basic>
+            <basic name="deliverySn">
+                <column name="delivery_sn" nullable="false" length="64"/>
+            </basic>
+            <basic name="autoConfirmDay">
+                <column name="auto_confirm_day" nullable="false" precision="11"/>
+            </basic>
+            <basic name="integration">
+                <column name="integration" nullable="false" precision="11"/>
+            </basic>
+            <basic name="growth">
+                <column name="growth" nullable="false" precision="11"/>
+            </basic>
+            <basic name="promotionInfo">
+                <column name="promotion_info" nullable="false" length="100"/>
+            </basic>
+            <basic name="billType">
+                <column name="bill_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="billHeader">
+                <column name="bill_header" nullable="false" length="200"/>
+            </basic>
+            <basic name="billContent">
+                <column name="bill_content" nullable="false" length="200"/>
+            </basic>
+            <basic name="billReceiverPhone">
+                <column name="bill_receiver_phone" nullable="false" length="32"/>
+            </basic>
+            <basic name="billReceiverEmail">
+                <column name="bill_receiver_email" nullable="false" length="64"/>
+            </basic>
+            <basic name="receiverName">
+                <column name="receiver_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="receiverPhone">
+                <column name="receiver_phone" nullable="false" length="32"/>
+            </basic>
+            <basic name="receiverPostCode">
+                <column name="receiver_post_code" nullable="false" length="32"/>
+            </basic>
+            <basic name="receiverProvince">
+                <column name="receiver_province" nullable="false" length="32"/>
+            </basic>
+            <basic name="receiverCity">
+                <column name="receiver_city" nullable="false" length="32"/>
+            </basic>
+            <basic name="receiverRegion">
+                <column name="receiver_region" nullable="false" length="32"/>
+            </basic>
+            <basic name="receiverDetailAddress">
+                <column name="receiver_detail_address" nullable="false" length="200"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false" length="500"/>
+            </basic>
+            <basic name="confirmStatus">
+                <column name="confirm_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="deleteStatus">
+                <column name="delete_status" precision="1"/>
+            </basic>
+            <basic name="useIntegration">
+                <column name="use_integration" nullable="false" precision="11"/>
+            </basic>
+            <basic name="paymentTime">
+                <column name="payment_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="deliveryTime">
+                <column name="delivery_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="receiveTime">
+                <column name="receive_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="commentTime">
+                <column name="comment_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="modifyTime">
+                <column name="modify_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="prepayId">
+                <column name="prepay_id" nullable="false"/>
+            </basic>
+            <basic name="supplyId">
+                <column name="supply_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="goodsName">
+                <column name="goods_name" nullable="false"/>
+            </basic>
+            <basic name="schoolId">
+                <column name="school_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="receiverId">
+                <column name="receiver_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="groupId">
+                <column name="group_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="taxType">
+                <column name="tax_type" nullable="false" precision="6"/>
+            </basic>
+            <basic name="taxContent">
+                <column name="tax_content" nullable="false"/>
+            </basic>
+            <basic name="taxCode">
+                <column name="tax_code" nullable="false" length="50"/>
+            </basic>
+            <basic name="taxTitle">
+                <column name="tax_title" nullable="false" length="50"/>
+            </basic>
+            <basic name="isComment">
+                <column name="is_comment" precision="1"/>
+            </basic>
+            <basic name="storeName">
+                <column name="store_name" nullable="false"/>
+            </basic>
+            <basic name="pid">
+                <column name="pid" nullable="false" precision="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.account.TbHealthPushTaskEntity">
+        <table name="tb_health_push_task" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="templateId">
+                <column name="template_id" nullable="false" length="64"/>
+            </basic>
+            <basic name="taskName">
+                <column name="task_name" nullable="false" length="64"/>
+            </basic>
+            <basic name="taskTopic">
+                <column name="task_topic" nullable="false" length="64"/>
+            </basic>
+            <basic name="taskCaption">
+                <column name="task_caption" nullable="false" length="200"/>
+            </basic>
+            <basic name="taskTips">
+                <column name="task_tips" nullable="false" length="64"/>
+            </basic>
+            <basic name="taskType">
+                <column name="task_type" nullable="false" length="64"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="goodsName">
+                <column name="goods_name" nullable="false" length="64"/>
+            </basic>
+            <basic name="goodsOnlineStatus">
+                <column name="goods_online_status" nullable="false" precision="2"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="isUpload">
+                <column name="is_upload" nullable="false" precision="1"/>
+            </basic>
+            <basic name="fileName">
+                <column name="file_name" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

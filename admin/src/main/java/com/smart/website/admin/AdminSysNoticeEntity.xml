@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.smart.website.admin.AdminSysNoticeEntity">
+        <table name="admin_sys_notice" schema="admin" catalog=""/>
+        <attributes>
+            <id name="noticeId">
+                <column name="notice_id" precision="4"/>
+            </id>
+            <basic name="noticeTitle">
+                <column name="notice_title" length="50"/>
+            </basic>
+            <basic name="noticeType">
+                <column name="notice_type" length="1"/>
+            </basic>
+            <basic name="noticeContent">
+                <column name="notice_content" nullable="false" length="2000"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
