@@ -2,39 +2,39 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/account" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/account/account_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account/account_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/account/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/account/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/activite/activite_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activite/activite_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activite/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activite/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/admin/admin_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/admin_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
@@ -70,16 +70,19 @@
     <file url="file://$PROJECT_DIR$/commons/security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generate/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orders" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orders/orders_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders/orders_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orders/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orders/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay" charset="UTF-8" />
@@ -95,40 +98,40 @@
     <file url="file://$PROJECT_DIR$/pay/weixinpay/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay/weixinpay/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product/product_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product/product_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product_side" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product_side/product_side_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product_side/product_side_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product_side/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product_side/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_app/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_app/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_domain/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user/user_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/user_test/src/main/resources" charset="UTF-8" />
   </component>
 </project>

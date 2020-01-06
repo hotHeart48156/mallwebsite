@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product_side.entity.CmsMemberReportEntity">
+        <table name="cms_member_report" schema="product_side" catalog=""/>
+        <attributes>
+            <basic name="id">
+                <column name="id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="reportType">
+                <column name="report_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="reportMemberName">
+                <column name="report_member_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="reportObject">
+                <column name="report_object" nullable="false" length="100"/>
+            </basic>
+            <basic name="reportStatus">
+                <column name="report_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="handleStatus">
+                <column name="handle_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false" length="200"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

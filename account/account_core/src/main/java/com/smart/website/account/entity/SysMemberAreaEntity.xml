@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.account.entity.SysMemberAreaEntity">
+        <table name="sys_member_area" schema="account" catalog=""/>
+        <id-class class="com.smart.website.account.entity.SysMemberAreaEntityPK"/>
+        <attributes>
+            <id name="memberId">
+                <column name="member_id" precision="20"/>
+            </id>
+            <id name="objId">
+                <column name="obj_id" precision="20"/>
+            </id>
+            <basic name="type">
+                <column name="type" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

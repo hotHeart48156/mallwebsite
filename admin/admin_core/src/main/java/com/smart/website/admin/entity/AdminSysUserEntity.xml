@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysUserEntity">
+        <table name="admin_sys_user" schema="admin" catalog=""/>
+        <attributes>
+            <id name="userId">
+                <column name="user_id" precision="20"/>
+            </id>
+            <basic name="deptId">
+                <column name="dept_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="loginName">
+                <column name="login_name" length="30"/>
+            </basic>
+            <basic name="userName">
+                <column name="user_name" length="30"/>
+            </basic>
+            <basic name="userType">
+                <column name="user_type" nullable="false" length="2"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false" length="50"/>
+            </basic>
+            <basic name="phonenumber">
+                <column name="phonenumber" nullable="false" length="11"/>
+            </basic>
+            <basic name="sex">
+                <column name="sex" nullable="false" length="1"/>
+            </basic>
+            <basic name="avatar">
+                <column name="avatar" nullable="false" length="100"/>
+            </basic>
+            <basic name="password">
+                <column name="password" nullable="false" length="50"/>
+            </basic>
+            <basic name="salt">
+                <column name="salt" nullable="false" length="20"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="1"/>
+            </basic>
+            <basic name="delFlag">
+                <column name="del_flag" nullable="false" length="1"/>
+            </basic>
+            <basic name="loginIp">
+                <column name="login_ip" nullable="false" length="50"/>
+            </basic>
+            <basic name="loginDate">
+                <column name="login_date" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

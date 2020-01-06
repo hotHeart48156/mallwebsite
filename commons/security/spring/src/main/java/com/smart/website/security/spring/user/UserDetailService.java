@@ -1,9 +1,6 @@
 package com.smart.website.security.spring.user;
-
-import com.smart.website.encode.Encode;
-import com.smart.website.mybatis.entity.UserEntity;
-import com.smart.website.mybatis.respository.RoleRespository;
-import com.smart.website.mybatis.respository.UserRespository;
+import com.smart.website.persistence.mybatis.service.Service;
+import com.smart.website.security.spring.encode.Encode;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -16,6 +13,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+
 /**
  * @author "yangbiao"
  * @create 2019122317:57
@@ -23,11 +21,7 @@ import java.util.Set;
 public class UserDetailService implements DetailService {
     @Autowired
     Encode encode;
-    @Autowired
-    private RoleRespository roleRespository;
-    @Autowired
-    private UserRespository userRespository;
-
+    private Service servicea;
     @Override
     public UserDetailsService detailsService() {
         UserDetailsService service = new UserDetailsService() {
@@ -41,6 +35,7 @@ public class UserDetailService implements DetailService {
                 for (Object id : roleRespository.findAll(userEntity.getUserId())
                 ) {
                     authorities.add(new SimpleGrantedAuthority(id.toString()));
+
 
                 }
                 return new UserDetails() {

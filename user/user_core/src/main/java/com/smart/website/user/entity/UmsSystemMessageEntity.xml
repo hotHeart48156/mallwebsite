@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsSystemMessageEntity">
+        <table name="ums_system_message" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="senderid">
+                <column name="senderid" precision="30"/>
+            </basic>
+            <basic name="recipientid">
+                <column name="recipientid" precision="30"/>
+            </basic>
+            <basic name="title">
+                <column name="title" nullable="false"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false"/>
+            </basic>
+            <basic name="time">
+                <column name="time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="type">
+                <column name="type" precision="2"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

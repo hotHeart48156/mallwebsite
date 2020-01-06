@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsPaimaiLogEntity">
+        <table name="sms_paimai_log" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="paimaiId">
+                <column name="paimai_id" nullable="false" precision="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

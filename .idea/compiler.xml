@@ -7,43 +7,44 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="activite_app" />
-        <module name="account_web" />
         <module name="shiro" />
-        <module name="activite_web" />
-        <module name="web" />
-        <module name="security" />
-        <module name="product_side_web" />
-        <module name="kafka" />
-        <module name="product_side_app" />
-        <module name="product_web" />
-        <module name="account_app" />
-        <module name="nuionpay" />
-        <module name="product_domain" />
-        <module name="orders_domain" />
-        <module name="alipay" />
-        <module name="admin_web" />
-        <module name="spring" />
-        <module name="user_domain" />
-        <module name="product_app" />
-        <module name="commons" />
-        <module name="account_domain" />
-        <module name="orders_app" />
-        <module name="activite_domain" />
-        <module name="mybatis" />
-        <module name="user_app" />
+        <module name="product_core" />
+        <module name="account_commons" />
+        <module name="product_side_core" />
+        <module name="product_side_commons" />
         <module name="weixinpay" />
+        <module name="product_side_test" />
+        <module name="activite_core" />
+        <module name="activite_commons" />
+        <module name="orders_core" />
+        <module name="activite_test" />
+        <module name="kafka" />
+        <module name="commons" />
+        <module name="security" />
+        <module name="generate" />
+        <module name="user_test" />
+        <module name="orders_commons" />
+        <module name="spring" />
+        <module name="admin_commons" />
+        <module name="admin_core" />
+        <module name="nuionpay" />
+        <module name="orders_test" />
+        <module name="account_core" />
+        <module name="product_test" />
         <module name="core" />
-        <module name="product_side_domain" />
-        <module name="admin_app" />
-        <module name="user_web" />
-        <module name="admin_domain" />
-        <module name="activete_domain" />
-        <module name="orders_web" />
+        <module name="mybatis" />
         <module name="redis" />
+        <module name="user_commons" />
+        <module name="admin_test" />
+        <module name="product_commons" />
+        <module name="alipay" />
+        <module name="user_core" />
+        <module name="account_test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activete_domain" target="1.8" />
+      <module name="alipay_test" target="1.5" />
       <module name="app (1)" target="1.5" />
       <module name="app (2)" target="1.5" />
       <module name="app (3)" target="1.5" />
@@ -54,11 +55,23 @@
       <module name="domain (3)" target="1.5" />
       <module name="domain (4)" target="1.5" />
       <module name="domain (6)" target="1.5" />
+      <module name="product_side_app" target="1.8" />
+      <module name="product_side_domain" target="1.8" />
+      <module name="product_side_web" target="1.8" />
+      <module name="product_web" target="1.8" />
+      <module name="user_app" target="1.8" />
+      <module name="user_domain" target="1.8" />
+      <module name="web" target="1.8" />
       <module name="web (1)" target="1.5" />
       <module name="web (2)" target="1.5" />
       <module name="web (3)" target="1.5" />
       <module name="web (4)" target="1.5" />
       <module name="web (6)" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="generate" options="-parameters" />
+    </option>
   </component>
 </project>

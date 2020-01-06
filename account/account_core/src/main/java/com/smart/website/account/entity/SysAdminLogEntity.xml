@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.account.entity.SysAdminLogEntity">
+        <table name="sys_admin_log" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="userId">
+                <column name="user_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="userName">
+                <column name="user_name" nullable="false" length="55"/>
+            </basic>
+            <basic name="serviceName">
+                <column name="service_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="method">
+                <column name="method" nullable="false"/>
+            </basic>
+            <basic name="operationDesc">
+                <column name="operation_desc" nullable="false"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="ip">
+                <column name="ip" nullable="false" length="100"/>
+            </basic>
+            <basic name="params">
+                <column name="params" nullable="false" length="3000"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="timeMin">
+                <column name="time_min" nullable="false" precision="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

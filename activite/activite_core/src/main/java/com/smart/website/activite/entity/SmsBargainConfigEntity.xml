@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsBargainConfigEntity">
+        <table name="sms_bargain_config" schema="activiti" catalog=""/>
+        <attributes>
+            <basic name="id">
+                <column name="id" precision="11"/>
+            </basic>
+            <basic name="plugInsId">
+                <column name="plug_ins_id" precision="11"/>
+            </basic>
+            <basic name="canNum">
+                <column name="can_num" nullable="false" precision="11"/>
+            </basic>
+            <basic name="helpNum">
+                <column name="help_num" nullable="false" precision="11"/>
+            </basic>
+            <basic name="parameter">
+                <column name="parameter" nullable="false" length="11"/>
+            </basic>
+            <basic name="invalidTime">
+                <column name="invalid_time" nullable="false" precision="11"/>
+            </basic>
+            <basic name="addTime">
+                <column name="add_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

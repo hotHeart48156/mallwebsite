@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminDayStaticsEntity">
+        <table name="admin_day_statics" schema="admin" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="goodsCount">
+                <column name="goods_count" nullable="false" precision="8"/>
+            </basic>
+            <basic name="payOrderCount">
+                <column name="pay_order_count" nullable="false" precision="8"/>
+            </basic>
+            <basic name="articleCount">
+                <column name="article_count" nullable="false" precision="8"/>
+            </basic>
+            <basic name="payAmount">
+                <column name="pay_amount" nullable="false" precision="10"/>
+            </basic>
+            <basic name="memberCount">
+                <column name="member_count" nullable="false" precision="8"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="notPayOrderCount">
+                <column name="not_pay_order_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="notPayAmount">
+                <column name="not_pay_amount" nullable="false" precision="10"/>
+            </basic>
+            <basic name="storeName">
+                <column name="store_name" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

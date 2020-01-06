@@ -8,9 +8,9 @@
 
     <name>orders</name>
     <modules>
-        <module>orders_app</module>
-        <module>orders_domain</module>
-        <module>orders_web</module>
+        <module>orders_commons</module>
+        <module>orders_test</module>
+        <module>orders_core</module>
     </modules>
     <dependencies>
         <dependency>

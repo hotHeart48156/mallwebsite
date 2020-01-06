@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsRewardLogEntity">
+        <table name="ums_reward_log" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="sendMemberId">
+                <column name="send_member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="recMemberId">
+                <column name="rec_member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="coin">
+                <column name="coin" nullable="false" precision="11"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="objid">
+                <column name="objid" nullable="false" precision="20"/>
+            </basic>
+            <basic name="memberNickName">
+                <column name="member_nick_name" length="36"/>
+            </basic>
+            <basic name="memberIcon">
+                <column name="member_icon" length="36"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

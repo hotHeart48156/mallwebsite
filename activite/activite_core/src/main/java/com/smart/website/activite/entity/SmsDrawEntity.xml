@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsDrawEntity">
+        <table name="sms_draw" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="goodId">
+                <column name="good_id" precision="11"/>
+            </basic>
+            <basic name="foundTime">
+                <column name="found_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="startTime">
+                <column name="start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endTime">
+                <column name="end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="num">
+                <column name="num" nullable="false" precision="11"/>
+            </basic>
+            <basic name="spellingNumber">
+                <column name="spelling_number" nullable="false" precision="11"/>
+            </basic>
+            <basic name="collageNumber">
+                <column name="collage_number" nullable="false" precision="11"/>
+            </basic>
+            <basic name="state">
+                <column name="state" nullable="false" precision="11"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="cishu">
+                <column name="cishu" nullable="false" precision="11"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="goodsName">
+                <column name="goods_name" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

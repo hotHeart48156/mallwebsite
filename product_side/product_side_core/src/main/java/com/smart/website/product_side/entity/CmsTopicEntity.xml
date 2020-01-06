@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product_side.entity.CmsTopicEntity">
+        <table name="cms_topic" schema="product_side" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="categoryId">
+                <column name="category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="startTime">
+                <column name="start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endTime">
+                <column name="end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="attendCount">
+                <column name="attend_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="attentionCount">
+                <column name="attention_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="readCount">
+                <column name="read_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="awardName">
+                <column name="award_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="attendType">
+                <column name="attend_type" nullable="false" length="100"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+            <basic name="areaName">
+                <column name="area_name" nullable="false"/>
+            </basic>
+            <basic name="schoolName">
+                <column name="school_name" nullable="false"/>
+            </basic>
+            <basic name="memberName">
+                <column name="member_name" nullable="false"/>
+            </basic>
+            <basic name="areaId">
+                <column name="area_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="schoolId">
+                <column name="school_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false"/>
+            </basic>
+            <basic name="atids">
+                <column name="atids" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

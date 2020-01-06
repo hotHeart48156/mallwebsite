@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsMemberLevelEntity">
+        <table name="ums_member_level" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="growthPoint">
+                <column name="growth_point" nullable="false" precision="11"/>
+            </basic>
+            <basic name="defaultStatus">
+                <column name="default_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="freeFreightPoint">
+                <column name="free_freight_point" nullable="false" precision="2"/>
+            </basic>
+            <basic name="commentGrowthPoint">
+                <column name="comment_growth_point" nullable="false" precision="11"/>
+            </basic>
+            <basic name="priviledgeFreeFreight">
+                <column name="priviledge_free_freight" nullable="false" precision="1"/>
+            </basic>
+            <basic name="priviledgeSignIn">
+                <column name="priviledge_sign_in" nullable="false" precision="1"/>
+            </basic>
+            <basic name="priviledgeComment">
+                <column name="priviledge_comment" nullable="false" precision="1"/>
+            </basic>
+            <basic name="priviledgePromotion">
+                <column name="priviledge_promotion" nullable="false" precision="1"/>
+            </basic>
+            <basic name="priviledgeMemberPrice">
+                <column name="priviledge_member_price" nullable="false" precision="1"/>
+            </basic>
+            <basic name="priviledgeBirthday">
+                <column name="priviledge_birthday" nullable="false" precision="1"/>
+            </basic>
+            <basic name="articlecount">
+                <column name="articlecount" nullable="false" precision="1"/>
+            </basic>
+            <basic name="goodscount">
+                <column name="goodscount" nullable="false" precision="1"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false" length="200"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="icon">
+                <column name="icon" nullable="false"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

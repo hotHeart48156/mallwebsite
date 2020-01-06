@@ -18,6 +18,8 @@
         <module>pay</module>
         <module>product_side</module>
         <module>commons</module>
+        <module>alipay_test</module>
+        <module>generate</module>
     </modules>
 
 

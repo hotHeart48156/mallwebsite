@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsBasicMarkingEntity">
+        <table name="sms_basic_marking" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="255"/>
+            </basic>
+            <basic name="activiUser">
+                <column name="activi_user" nullable="false" precision="255"/>
+            </basic>
+            <basic name="activiGoods">
+                <column name="activi_goods" nullable="false" precision="255"/>
+            </basic>
+            <basic name="bigType">
+                <column name="big_type" nullable="false" precision="255"/>
+            </basic>
+            <basic name="smallType">
+                <column name="small_type" nullable="false" precision="255"/>
+            </basic>
+            <basic name="rules">
+                <column name="rules" nullable="false" length="1000"/>
+            </basic>
+            <basic name="goodsDs">
+                <column name="goods_ds" nullable="false"/>
+            </basic>
+            <basic name="userLevel">
+                <column name="user_level" nullable="false" length="500"/>
+            </basic>
+            <basic name="startTime">
+                <column name="start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endTime">
+                <column name="end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsGoodsDiypageMapEntity">
+        <table name="sms_goods_diypage_map" schema="activiti" catalog=""/>
+        <attributes>
+            <basic name="id">
+                <column name="id" precision="20"/>
+            </basic>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="diypageId">
+                <column name="diypage_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="data">
+                <column name="data" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

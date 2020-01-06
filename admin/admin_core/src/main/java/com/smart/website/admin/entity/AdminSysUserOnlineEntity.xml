@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysUserOnlineEntity">
+        <table name="admin_sys_user_online" schema="admin" catalog=""/>
+        <attributes>
+            <id name="sessionId">
+                <column name="sessionId" length="50"/>
+            </id>
+            <basic name="loginName">
+                <column name="login_name" nullable="false" length="50"/>
+            </basic>
+            <basic name="deptName">
+                <column name="dept_name" nullable="false" length="50"/>
+            </basic>
+            <basic name="ipaddr">
+                <column name="ipaddr" nullable="false" length="50"/>
+            </basic>
+            <basic name="loginLocation">
+                <column name="login_location" nullable="false"/>
+            </basic>
+            <basic name="browser">
+                <column name="browser" nullable="false" length="50"/>
+            </basic>
+            <basic name="os">
+                <column name="os" nullable="false" length="50"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="10"/>
+            </basic>
+            <basic name="startTimestamp">
+                <column name="start_timestamp" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="lastAccessTime">
+                <column name="last_access_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="expireTime">
+                <column name="expire_time" nullable="false" precision="5"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

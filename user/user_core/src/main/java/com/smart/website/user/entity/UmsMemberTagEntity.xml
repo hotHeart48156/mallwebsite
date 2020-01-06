@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsMemberTagEntity">
+        <table name="ums_member_tag" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="11"/>
+            </basic>
+            <basic name="genType">
+                <column name="gen_type" nullable="false" precision="10"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product_side.entity.CmsSubjectEntity">
+        <table name="cms_subject" schema="product_side" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="categoryId">
+                <column name="category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="title">
+                <column name="title" nullable="false" length="100"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false" length="500"/>
+            </basic>
+            <basic name="productCount">
+                <column name="product_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="recommendStatus">
+                <column name="recommend_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="collectCount">
+                <column name="collect_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="readCount">
+                <column name="read_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="commentCount">
+                <column name="comment_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="albumPics">
+                <column name="album_pics" nullable="false"/>
+            </basic>
+            <basic name="description">
+                <column name="description" nullable="false" length="1000"/>
+            </basic>
+            <basic name="showStatus">
+                <column name="show_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false"/>
+            </basic>
+            <basic name="forwardCount">
+                <column name="forward_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="categoryName">
+                <column name="category_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="areaId">
+                <column name="area_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="schoolId">
+                <column name="school_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="reward">
+                <column name="reward" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="areaName">
+                <column name="area_name" nullable="false"/>
+            </basic>
+            <basic name="schoolName">
+                <column name="school_name" nullable="false"/>
+            </basic>
+            <basic name="memberName">
+                <column name="member_name" nullable="false"/>
+            </basic>
+            <basic name="videoSrc">
+                <column name="video_src" nullable="false"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

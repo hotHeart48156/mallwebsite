@@ -11,14 +11,19 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author "yangbiao"
  * @date 2019122322:21
  */
+//用来解决认证过的用户访问无权限资源时的异常
 public class AccessDeniedHandle implements AccessDenied {
     @Autowired
     private ObjectMapper mapper;
+
+    public static boolean isAjaxRequest(HttpServletRequest request) {
+        String ajaxFlag = request.getHeader("X-Requested-With");
+        return ajaxFlag != null && "XMLHttpRequest".equals(ajaxFlag);
+    }
 
     @Override
     public AccessDeniedHandler deniedHandler() {
@@ -36,6 +41,12 @@ public class AccessDeniedHandle implements AccessDenied {
                 httpServletResponse.setStatus(HttpServletResponse.SC_FORBIDDEN);
                 httpServletResponse.getWriter().write(mapper.writeValueAsString(map));
 
+                /**
+                 *   response.setCharacterEncoding("utf-8");
+                 *         response.setContentType("text/javascript;charset=utf-8");
+                 *         response.getWriter().print(JSONObject.toJSONString(RestMsg.error("没有访问权限!")));
+                 *
+                 */
             }
         };
     }

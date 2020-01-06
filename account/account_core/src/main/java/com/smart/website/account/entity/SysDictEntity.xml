@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.account.entity.SysDictEntity">
+        <table name="sys_dict" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="keyname">
+                <column name="keyname" nullable="false" length="50"/>
+            </basic>
+            <basic name="valuename">
+                <column name="valuename" nullable="false" length="2000"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="4"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

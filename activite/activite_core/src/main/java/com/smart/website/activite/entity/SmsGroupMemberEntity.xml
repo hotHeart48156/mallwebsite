@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsGroupMemberEntity">
+        <table name="sms_group_member" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="groupId">
+                <column name="group_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" length="20"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="mainId">
+                <column name="main_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="2550"/>
+            </basic>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="11"/>
+            </basic>
+            <basic name="orderId">
+                <column name="order_id" nullable="false" length="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="exipreTime">
+                <column name="exipre_time" nullable="false" precision="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

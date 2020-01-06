@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminGenTableEntity">
+        <table name="admin_gen_table" schema="admin" catalog=""/>
+        <attributes>
+            <id name="tableId">
+                <column name="table_id" precision="20"/>
+            </id>
+            <basic name="tableName">
+                <column name="table_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="tableComment">
+                <column name="table_comment" nullable="false" length="500"/>
+            </basic>
+            <basic name="className">
+                <column name="class_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="tplCategory">
+                <column name="tpl_category" nullable="false" length="200"/>
+            </basic>
+            <basic name="packageName">
+                <column name="package_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="moduleName">
+                <column name="module_name" nullable="false" length="30"/>
+            </basic>
+            <basic name="businessName">
+                <column name="business_name" nullable="false" length="30"/>
+            </basic>
+            <basic name="functionName">
+                <column name="function_name" nullable="false" length="50"/>
+            </basic>
+            <basic name="functionAuthor">
+                <column name="function_author" nullable="false" length="50"/>
+            </basic>
+            <basic name="options">
+                <column name="options" nullable="false" length="1000"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

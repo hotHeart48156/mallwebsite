@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsHomeAdvertiseEntity">
+        <table name="sms_home_advertise" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false" length="500"/>
+            </basic>
+            <basic name="startTime">
+                <column name="start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endTime">
+                <column name="end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="clickCount">
+                <column name="click_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="orderCount">
+                <column name="order_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="url">
+                <column name="url" nullable="false" length="500"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false" length="500"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

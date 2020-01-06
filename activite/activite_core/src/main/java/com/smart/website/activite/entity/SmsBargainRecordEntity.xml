@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsBargainRecordEntity">
+        <table name="sms_bargain_record" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="sId">
+                <column name="s_id" precision="11"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id" precision="15"/>
+            </basic>
+            <basic name="money">
+                <column name="money" precision="2"/>
+            </basic>
+            <basic name="addTime">
+                <column name="add_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="event">
+                <column name="event" nullable="false" length="200"/>
+            </basic>
+            <basic name="name">
+                <column name="name" length="15"/>
+            </basic>
+            <basic name="tel">
+                <column name="tel" length="15"/>
+            </basic>
+            <basic name="sheng">
+                <column name="sheng" precision="11"/>
+            </basic>
+            <basic name="city">
+                <column name="city" precision="11"/>
+            </basic>
+            <basic name="quyu">
+                <column name="quyu" precision="11"/>
+            </basic>
+            <basic name="address">
+                <column name="address"/>
+            </basic>
+            <basic name="status">
+                <column name="status" precision="4"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

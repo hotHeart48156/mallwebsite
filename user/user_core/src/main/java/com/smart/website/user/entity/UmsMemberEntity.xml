@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsMemberEntity">
+        <table name="ums_member" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="memberLevelId">
+                <column name="member_level_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="username">
+                <column name="username" nullable="false" length="64"/>
+            </basic>
+            <basic name="password">
+                <column name="password" nullable="false" length="64"/>
+            </basic>
+            <basic name="nickname">
+                <column name="nickname" nullable="false" length="64"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" nullable="false" length="64"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="icon">
+                <column name="icon" nullable="false" length="500"/>
+            </basic>
+            <basic name="gender">
+                <column name="gender" nullable="false" precision="1"/>
+            </basic>
+            <basic name="birthday">
+                <column name="birthday" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="city">
+                <column name="city" nullable="false" length="64"/>
+            </basic>
+            <basic name="job">
+                <column name="job" nullable="false" length="100"/>
+            </basic>
+            <basic name="personalizedSignature">
+                <column name="personalized_signature" nullable="false" length="200"/>
+            </basic>
+            <basic name="sourceType">
+                <column name="source_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="integration">
+                <column name="integration" nullable="false" precision="11"/>
+            </basic>
+            <basic name="growth">
+                <column name="growth" nullable="false" precision="11"/>
+            </basic>
+            <basic name="luckeyCount">
+                <column name="luckey_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="historyIntegration">
+                <column name="history_integration" nullable="false" precision="11"/>
+            </basic>
+            <basic name="avatar">
+                <column name="avatar" nullable="false"/>
+            </basic>
+            <basic name="weixinOpenid">
+                <column name="weixin_openid" nullable="false" length="1000"/>
+            </basic>
+            <basic name="invitecode">
+                <column name="invitecode" nullable="false" length="20"/>
+            </basic>
+            <basic name="blance">
+                <column name="blance" nullable="false" precision="10"/>
+            </basic>
+            <basic name="schoolId">
+                <column name="school_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="areaId">
+                <column name="area_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="schoolName">
+                <column name="school_name" nullable="false"/>
+            </basic>
+            <basic name="areaName">
+                <column name="area_name" nullable="false"/>
+            </basic>
+            <basic name="buyCount">
+                <column name="buy_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="buyMoney">
+                <column name="buy_money" nullable="false" precision="10"/>
+            </basic>
+            <basic name="memberLevelName">
+                <column name="member_level_name" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

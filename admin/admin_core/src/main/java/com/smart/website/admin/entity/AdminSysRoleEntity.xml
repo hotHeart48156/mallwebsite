@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysRoleEntity">
+        <table name="admin_sys_role" schema="admin" catalog=""/>
+        <attributes>
+            <id name="roleId">
+                <column name="role_id" precision="20"/>
+            </id>
+            <basic name="roleName">
+                <column name="role_name" length="30"/>
+            </basic>
+            <basic name="roleKey">
+                <column name="role_key" length="100"/>
+            </basic>
+            <basic name="roleSort">
+                <column name="role_sort" precision="4"/>
+            </basic>
+            <basic name="dataScope">
+                <column name="data_scope" nullable="false" length="1"/>
+            </basic>
+            <basic name="status">
+                <column name="status" length="1"/>
+            </basic>
+            <basic name="delFlag">
+                <column name="del_flag" nullable="false" length="1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

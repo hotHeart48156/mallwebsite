@@ -8,9 +8,9 @@
 
     <name>product_side</name>
     <modules>
-        <module>product_side_app</module>
-        <module>product_side_web</module>
-        <module>product_side_domain</module>
+        <module>product_side_commons</module>
+        <module>product_side_core</module>
+        <module>product_side_test</module>
     </modules>
 
     <parent>

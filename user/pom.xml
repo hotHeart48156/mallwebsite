@@ -8,9 +8,9 @@
 
     <name>user</name>
     <modules>
-        <module> user_web</module>
-        <module>user_domain</module>
-        <module>user_app</module>
+        <module>user_core</module>
+        <module>user_commons</module>
+        <module>user_test</module>
     </modules>
     <dependencies>
         <dependency>

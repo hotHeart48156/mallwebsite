@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.account.entity.SysSmsEntity">
+        <table name="sys_sms" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="phone">
+                <column name="phone" length="16"/>
+            </basic>
+            <basic name="signName">
+                <column name="signName" nullable="false" length="128"/>
+            </basic>
+            <basic name="templateCode">
+                <column name="templateCode" nullable="false" length="128"/>
+            </basic>
+            <basic name="params">
+                <column name="params" nullable="false" length="500"/>
+            </basic>
+            <basic name="bizId">
+                <column name="bizId" nullable="false" length="128"/>
+            </basic>
+            <basic name="code">
+                <column name="code" nullable="false" length="64"/>
+            </basic>
+            <basic name="message">
+                <column name="message" nullable="false" length="128"/>
+            </basic>
+            <basic name="day">
+                <column name="day" precision="-1"/>
+            </basic>
+            <basic name="createTime">
+                <column name="createTime" precision="-1"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="updateTime" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

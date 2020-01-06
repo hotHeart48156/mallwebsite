@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product.entity.PmsProductEntity">
+        <table name="pms_product" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="brandId">
+                <column name="brand_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productCategoryId">
+                <column name="product_category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="feightTemplateId">
+                <column name="feight_template_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productAttributeCategoryId">
+                <column name="product_attribute_category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="200"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+            <basic name="productSn">
+                <column name="product_sn" nullable="false" length="64"/>
+            </basic>
+            <basic name="deleteStatus">
+                <column name="delete_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="publishStatus">
+                <column name="publish_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="newStatus">
+                <column name="new_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="recommandStatus">
+                <column name="recommand_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="verifyStatus">
+                <column name="verify_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="11"/>
+            </basic>
+            <basic name="sale">
+                <column name="sale" nullable="false" precision="11"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="promotionPrice">
+                <column name="promotion_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="giftGrowth">
+                <column name="gift_growth" nullable="false" precision="11"/>
+            </basic>
+            <basic name="giftPoint">
+                <column name="gift_point" nullable="false" precision="11"/>
+            </basic>
+            <basic name="usePointLimit">
+                <column name="use_point_limit" nullable="false" precision="11"/>
+            </basic>
+            <basic name="subTitle">
+                <column name="sub_title" nullable="false"/>
+            </basic>
+            <basic name="description">
+                <column name="description" nullable="false"/>
+            </basic>
+            <basic name="originalPrice">
+                <column name="original_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="stock">
+                <column name="stock" nullable="false" precision="11"/>
+            </basic>
+            <basic name="lowStock">
+                <column name="low_stock" nullable="false" precision="11"/>
+            </basic>
+            <basic name="unit">
+                <column name="unit" nullable="false" length="16"/>
+            </basic>
+            <basic name="weight">
+                <column name="weight" nullable="false" precision="2"/>
+            </basic>
+            <basic name="previewStatus">
+                <column name="preview_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="serviceIds">
+                <column name="service_ids" nullable="false" length="64"/>
+            </basic>
+            <basic name="keywords">
+                <column name="keywords" nullable="false"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false"/>
+            </basic>
+            <basic name="albumPics">
+                <column name="album_pics" nullable="false"/>
+            </basic>
+            <basic name="detailTitle">
+                <column name="detail_title" nullable="false"/>
+            </basic>
+            <basic name="detailDesc">
+                <column name="detail_desc" nullable="false"/>
+            </basic>
+            <basic name="detailHtml">
+                <column name="detail_html" nullable="false"/>
+            </basic>
+            <basic name="detailMobileHtml">
+                <column name="detail_mobile_html" nullable="false"/>
+            </basic>
+            <basic name="promotionStartTime">
+                <column name="promotion_start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="promotionEndTime">
+                <column name="promotion_end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="promotionPerLimit">
+                <column name="promotion_per_limit" nullable="false" precision="11"/>
+            </basic>
+            <basic name="promotionType">
+                <column name="promotion_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="brandName">
+                <column name="brand_name" nullable="false"/>
+            </basic>
+            <basic name="productCategoryName">
+                <column name="product_category_name" nullable="false"/>
+            </basic>
+            <basic name="supplyId">
+                <column name="supply_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="schoolId">
+                <column name="school_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="hit">
+                <column name="hit" nullable="false" precision="11"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="11"/>
+            </basic>
+            <basic name="areaId">
+                <column name="area_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="areaName">
+                <column name="area_name" nullable="false"/>
+            </basic>
+            <basic name="schoolName">
+                <column name="school_name" nullable="false"/>
+            </basic>
+            <basic name="transfee">
+                <column name="transfee" precision="10"/>
+            </basic>
+            <basic name="isPaimai">
+                <column name="is_paimai" nullable="false" precision="11"/>
+            </basic>
+            <basic name="expireTime">
+                <column name="expire_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeName">
+                <column name="store_name" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -8,9 +8,9 @@
 
     <name>activite</name>
     <modules>
-        <module>activite_app</module>
-        <module>activite_domain</module>
-        <module>activite_web</module>
+        <module>activite_test</module>
+        <module>activite_core</module>
+        <module>activite_commons</module>
     </modules>
     <dependencies>
         <dependency>

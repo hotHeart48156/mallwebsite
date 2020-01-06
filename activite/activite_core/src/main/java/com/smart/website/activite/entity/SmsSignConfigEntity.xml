@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsSignConfigEntity">
+        <table name="sms_sign_config" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="plugInsId">
+                <column name="plug_ins_id" precision="11"/>
+            </basic>
+            <basic name="imgurl">
+                <column name="imgurl" length="200"/>
+            </basic>
+            <basic name="minScore">
+                <column name="min_score" precision="11"/>
+            </basic>
+            <basic name="maxScore">
+                <column name="max_score" precision="11"/>
+            </basic>
+            <basic name="continuityThree">
+                <column name="continuity_three" precision="11"/>
+            </basic>
+            <basic name="continuityTwenty">
+                <column name="continuity_twenty" precision="11"/>
+            </basic>
+            <basic name="continuityThirty">
+                <column name="continuity_thirty" precision="11"/>
+            </basic>
+            <basic name="activityOverdue">
+                <column name="activity_overdue" precision="11"/>
+            </basic>
+            <basic name="modifyDate">
+                <column name="modify_date" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product_side.entity.CmsParterEntity">
+        <table name="cms_parter" schema="product_side" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="companyname">
+                <column name="companyname" nullable="false"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="idcard">
+                <column name="idcard" nullable="false"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" nullable="false"/>
+            </basic>
+            <basic name="info">
+                <column name="info" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

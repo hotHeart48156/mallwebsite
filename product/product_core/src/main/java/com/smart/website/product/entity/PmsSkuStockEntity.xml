@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product.entity.PmsSkuStockEntity">
+        <table name="pms_sku_stock" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="skuCode">
+                <column name="sku_code" length="64"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="stock">
+                <column name="stock" nullable="false" precision="11"/>
+            </basic>
+            <basic name="lowStock">
+                <column name="low_stock" nullable="false" precision="11"/>
+            </basic>
+            <basic name="sp1">
+                <column name="sp1" nullable="false" length="64"/>
+            </basic>
+            <basic name="sp2">
+                <column name="sp2" nullable="false" length="64"/>
+            </basic>
+            <basic name="sp3">
+                <column name="sp3" nullable="false" length="64"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+            <basic name="sale">
+                <column name="sale" nullable="false" precision="11"/>
+            </basic>
+            <basic name="promotionPrice">
+                <column name="promotion_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="lockStock">
+                <column name="lock_stock" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="productName">
+                <column name="product_name" nullable="false"/>
+            </basic>
+            <basic name="sp4">
+                <column name="sp4" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

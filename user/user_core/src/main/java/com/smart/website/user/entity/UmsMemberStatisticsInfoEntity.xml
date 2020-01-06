@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsMemberStatisticsInfoEntity">
+        <table name="ums_member_statistics_info" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="consumeAmount">
+                <column name="consume_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="orderCount">
+                <column name="order_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="couponCount">
+                <column name="coupon_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="commentCount">
+                <column name="comment_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="returnOrderCount">
+                <column name="return_order_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="loginCount">
+                <column name="login_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="attendCount">
+                <column name="attend_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="fansCount">
+                <column name="fans_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="collectProductCount">
+                <column name="collect_product_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="collectSubjectCount">
+                <column name="collect_subject_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="collectTopicCount">
+                <column name="collect_topic_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="collectCommentCount">
+                <column name="collect_comment_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="inviteFriendCount">
+                <column name="invite_friend_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="recentOrderTime">
+                <column name="recent_order_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

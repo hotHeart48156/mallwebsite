@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsExperienceEntity">
+        <table name="sms_experience" schema="activiti" catalog=""/>
+        <attributes>
+            <basic name="id">
+                <column name="id" precision="11"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id" precision="15"/>
+            </basic>
+            <basic name="sellerId">
+                <column name="seller_id" precision="15"/>
+            </basic>
+            <basic name="name">
+                <column name="name" length="20"/>
+            </basic>
+            <basic name="mobile">
+                <column name="mobile" nullable="false" length="20"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false" length="300"/>
+            </basic>
+            <basic name="num">
+                <column name="num" precision="11"/>
+            </basic>
+            <basic name="content">
+                <column name="content"/>
+            </basic>
+            <basic name="addDate">
+                <column name="add_date" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="status">
+                <column name="status" precision="4"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

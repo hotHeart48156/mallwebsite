@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product.entity.PmsProductAttributeCategoryEntity">
+        <table name="pms_product_attribute_category" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="64"/>
+            </basic>
+            <basic name="attributeCount">
+                <column name="attribute_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="paramCount">
+                <column name="param_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="pic">
+                <column name="pic" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

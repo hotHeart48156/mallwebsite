@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product.entity.PmsBrandEntity">
+        <table name="pms_brand" schema="product1" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="64"/>
+            </basic>
+            <basic name="firstLetter">
+                <column name="first_letter" nullable="false" length="8"/>
+            </basic>
+            <basic name="sort">
+                <column name="sort" nullable="false" precision="11"/>
+            </basic>
+            <basic name="factoryStatus">
+                <column name="factory_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="showStatus">
+                <column name="show_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="productCount">
+                <column name="product_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="productCommentCount">
+                <column name="product_comment_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="logo">
+                <column name="logo" nullable="false"/>
+            </basic>
+            <basic name="bigPic">
+                <column name="big_pic" nullable="false"/>
+            </basic>
+            <basic name="brandStory">
+                <column name="brand_story" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

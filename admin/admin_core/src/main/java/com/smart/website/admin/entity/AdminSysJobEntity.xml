@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysJobEntity">
+        <table name="admin_sys_job" schema="admin" catalog=""/>
+        <id-class class="com.smart.website.admin.entity.AdminSysJobEntityPK"/>
+        <attributes>
+            <id name="jobId">
+                <column name="job_id" precision="20"/>
+            </id>
+            <id name="jobName">
+                <column name="job_name" length="64"/>
+            </id>
+            <id name="jobGroup">
+                <column name="job_group" length="64"/>
+            </id>
+            <basic name="invokeTarget">
+                <column name="invoke_target" length="500"/>
+            </basic>
+            <basic name="cronExpression">
+                <column name="cron_expression" nullable="false"/>
+            </basic>
+            <basic name="misfirePolicy">
+                <column name="misfire_policy" nullable="false" length="20"/>
+            </basic>
+            <basic name="concurrent">
+                <column name="concurrent" nullable="false" length="1"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="1"/>
+            </basic>
+            <basic name="createBy">
+                <column name="create_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateBy">
+                <column name="update_by" nullable="false" length="64"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="remark">
+                <column name="remark" nullable="false" length="500"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

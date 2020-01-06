@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysRoleMenuEntity">
+        <table name="admin_sys_role_menu" schema="admin" catalog=""/>
+        <id-class class="com.smart.website.admin.entity.AdminSysRoleMenuEntityPK"/>
+        <attributes>
+            <id name="roleId">
+                <column name="role_id" precision="20"/>
+            </id>
+            <id name="menuId">
+                <column name="menu_id" precision="20"/>
+            </id>
+        </attributes>
+    </entity>
+</entity-mappings>

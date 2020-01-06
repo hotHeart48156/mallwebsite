@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsSignRecordEntity">
+        <table name="sms_sign_record" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="userId">
+                <column name="user_id" precision="15"/>
+            </basic>
+            <basic name="signScore">
+                <column name="sign_score" precision="11"/>
+            </basic>
+            <basic name="record">
+                <column name="record" nullable="false" length="20"/>
+            </basic>
+            <basic name="signTime">
+                <column name="sign_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="type">
+                <column name="type" precision="4"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

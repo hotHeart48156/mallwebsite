@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.account.entity.SysEmailConfigEntity">
+        <table name="sys_email_config" schema="account" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="fromUser">
+                <column name="from_user" nullable="false"/>
+            </basic>
+            <basic name="host">
+                <column name="host" nullable="false"/>
+            </basic>
+            <basic name="pass">
+                <column name="pass" nullable="false"/>
+            </basic>
+            <basic name="port">
+                <column name="port" nullable="false"/>
+            </basic>
+            <basic name="user">
+                <column name="user" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

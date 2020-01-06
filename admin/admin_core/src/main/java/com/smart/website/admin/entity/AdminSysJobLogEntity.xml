@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysJobLogEntity">
+        <table name="admin_sys_job_log" schema="admin" catalog=""/>
+        <attributes>
+            <id name="jobLogId">
+                <column name="job_log_id" precision="20"/>
+            </id>
+            <basic name="jobName">
+                <column name="job_name" length="64"/>
+            </basic>
+            <basic name="jobGroup">
+                <column name="job_group" length="64"/>
+            </basic>
+            <basic name="invokeTarget">
+                <column name="invoke_target" length="500"/>
+            </basic>
+            <basic name="jobMessage">
+                <column name="job_message" nullable="false" length="500"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" length="1"/>
+            </basic>
+            <basic name="exceptionInfo">
+                <column name="exception_info" nullable="false" length="2000"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

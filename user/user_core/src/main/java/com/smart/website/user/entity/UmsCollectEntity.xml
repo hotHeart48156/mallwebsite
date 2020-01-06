@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.UmsCollectEntity">
+        <table name="ums_collect" schema="user" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="goodsId">
+                <column name="goods_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="goodsName">
+                <column name="goods_name" nullable="false"/>
+            </basic>
+            <basic name="goodsPic">
+                <column name="goods_pic" nullable="false"/>
+            </basic>
+            <basic name="goodsPrice">
+                <column name="goods_price" nullable="false"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="11"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.product_side.entity.CmsHelpEntity">
+        <table name="cms_help" schema="product_side" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="categoryId">
+                <column name="category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="icon">
+                <column name="icon" nullable="false" length="500"/>
+            </basic>
+            <basic name="title">
+                <column name="title" nullable="false" length="100"/>
+            </basic>
+            <basic name="showStatus">
+                <column name="show_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="readCount">
+                <column name="read_count" nullable="false" precision="1"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

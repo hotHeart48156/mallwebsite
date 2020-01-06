@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsShareEntity">
+        <table name="sms_share" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="userId">
+                <column name="user_id" nullable="false" length="15"/>
+            </basic>
+            <basic name="wxId">
+                <column name="wx_id" nullable="false" length="50"/>
+            </basic>
+            <basic name="wxName">
+                <column name="wx_name" nullable="false" length="150"/>
+            </basic>
+            <basic name="sex">
+                <column name="sex" nullable="false" precision="11"/>
+            </basic>
+            <basic name="type">
+                <column name="type" precision="4"/>
+            </basic>
+            <basic name="articleId">
+                <column name="Article_id" precision="11"/>
+            </basic>
+            <basic name="shareAdd">
+                <column name="share_add" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="coupon">
+                <column name="coupon" precision="2"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

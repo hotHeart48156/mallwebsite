@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.user.entity.SysAppletSetEntity">
+        <table name="sys_applet_set" schema="user" catalog=""/>
+        <attributes>
+            <id name="storeId">
+                <column name="store_id" precision="20"/>
+            </id>
+            <basic name="appid">
+                <column name="appid"/>
+            </basic>
+            <basic name="appsecret">
+                <column name="appsecret" nullable="false"/>
+            </basic>
+            <basic name="mchid">
+                <column name="mchid" nullable="false"/>
+            </basic>
+            <basic name="paySignKey">
+                <column name="pay_sign_key" nullable="false"/>
+            </basic>
+            <basic name="certname">
+                <column name="certname" nullable="false"/>
+            </basic>
+            <basic name="notifyurl">
+                <column name="notifyurl" nullable="false"/>
+            </basic>
+            <basic name="templateid1">
+                <column name="templateid1" nullable="false"/>
+            </basic>
+            <basic name="templateid2">
+                <column name="templateid2" nullable="false"/>
+            </basic>
+            <basic name="templateid3">
+                <column name="templateid3" nullable="false"/>
+            </basic>
+            <basic name="templateid4">
+                <column name="templateid4" nullable="false"/>
+            </basic>
+            <basic name="templateid5">
+                <column name="templateid5" nullable="false"/>
+            </basic>
+            <basic name="templateid6">
+                <column name="templateid6" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

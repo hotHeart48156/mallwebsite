@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.activite.entity.SmsCouponEntity">
+        <table name="sms_coupon" schema="activiti" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="type">
+                <column name="type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="platform">
+                <column name="platform" nullable="false" precision="1"/>
+            </basic>
+            <basic name="count">
+                <column name="count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="amount">
+                <column name="amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="perLimit">
+                <column name="per_limit" nullable="false" precision="11"/>
+            </basic>
+            <basic name="minPoint">
+                <column name="min_point" nullable="false" precision="2"/>
+            </basic>
+            <basic name="startTime">
+                <column name="start_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endTime">
+                <column name="end_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="useType">
+                <column name="use_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="note">
+                <column name="note" nullable="false" length="200"/>
+            </basic>
+            <basic name="publishCount">
+                <column name="publish_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="useCount">
+                <column name="use_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="receiveCount">
+                <column name="receive_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="enableTime">
+                <column name="enable_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="code">
+                <column name="code" nullable="false" length="64"/>
+            </basic>
+            <basic name="memberLevel">
+                <column name="member_level" nullable="false" precision="1"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

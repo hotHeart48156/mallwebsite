@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.admin.entity.AdminSysOperLogEntity">
+        <table name="admin_sys_oper_log" schema="admin" catalog=""/>
+        <attributes>
+            <id name="operId">
+                <column name="oper_id" precision="20"/>
+            </id>
+            <basic name="title">
+                <column name="title" nullable="false" length="50"/>
+            </basic>
+            <basic name="businessType">
+                <column name="business_type" nullable="false" precision="2"/>
+            </basic>
+            <basic name="method">
+                <column name="method" nullable="false" length="100"/>
+            </basic>
+            <basic name="requestMethod">
+                <column name="request_method" nullable="false" length="10"/>
+            </basic>
+            <basic name="operatorType">
+                <column name="operator_type" nullable="false" precision="1"/>
+            </basic>
+            <basic name="operName">
+                <column name="oper_name" nullable="false" length="50"/>
+            </basic>
+            <basic name="deptName">
+                <column name="dept_name" nullable="false" length="50"/>
+            </basic>
+            <basic name="operUrl">
+                <column name="oper_url" nullable="false"/>
+            </basic>
+            <basic name="operIp">
+                <column name="oper_ip" nullable="false" length="50"/>
+            </basic>
+            <basic name="operLocation">
+                <column name="oper_location" nullable="false"/>
+            </basic>
+            <basic name="operParam">
+                <column name="oper_param" nullable="false" length="2000"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="errorMsg">
+                <column name="error_msg" nullable="false" length="2000"/>
+            </basic>
+            <basic name="operTime">
+                <column name="oper_time" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
