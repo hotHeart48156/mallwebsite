@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_sign_config", schema = "activiti", catalog = "")
+//登录日志
 public class SmsSignConfigEntity {
     private long id;
     private long plugInsId;

@@ -1,7 +1,6 @@
 package com.smart.website.product_side.entity;
 
 import java.sql.Timestamp;
-
 @Entity
 @Table(name = "cms_favorite", schema = "product_side", catalog = "")
 public class CmsFavoriteEntity {

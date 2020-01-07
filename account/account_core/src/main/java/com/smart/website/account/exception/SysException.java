@@ -25,4 +25,7 @@ public class SysException extends BaseException {
     }
 
 
+    public SysException(BasicErrorCode colaError, String s) {
+        super(s);
+    }
 }

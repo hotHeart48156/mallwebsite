@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account_commons/account_commons.iml" filepath="$PROJECT_DIR$/account/account_commons/account_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account_core/account_core.iml" filepath="$PROJECT_DIR$/account/account_core/account_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account_test/account_test.iml" filepath="$PROJECT_DIR$/account/account_test/account_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite.iml" filepath="$PROJECT_DIR$/activite/activite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite_commons/activite_commons.iml" filepath="$PROJECT_DIR$/activite/activite_commons/activite_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite_core/activite_core.iml" filepath="$PROJECT_DIR$/activite/activite_core/activite_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activite/activite_test/activite_test.iml" filepath="$PROJECT_DIR$/activite/activite_test/activite_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin.iml" filepath="$PROJECT_DIR$/admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin_commons/admin_commons.iml" filepath="$PROJECT_DIR$/admin/admin_commons/admin_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin_core/admin_core.iml" filepath="$PROJECT_DIR$/admin/admin_core/admin_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin/admin_test/admin_test.iml" filepath="$PROJECT_DIR$/admin/admin_test/admin_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/alipay/alipay.iml" filepath="$PROJECT_DIR$/pay/alipay/alipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/nuionpay/nuionpay.iml" filepath="$PROJECT_DIR$/pay/nuionpay/nuionpay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders/orders.iml" filepath="$PROJECT_DIR$/orders/orders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders/orders_commons/orders_commons.iml" filepath="$PROJECT_DIR$/orders/orders_commons/orders_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders/orders_core/orders_core.iml" filepath="$PROJECT_DIR$/orders/orders_core/orders_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orders/orders_test/orders_test.iml" filepath="$PROJECT_DIR$/orders/orders_test/orders_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/pay.iml" filepath="$PROJECT_DIR$/pay/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product_commons/product_commons.iml" filepath="$PROJECT_DIR$/product/product_commons/product_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product_core/product_core.iml" filepath="$PROJECT_DIR$/product/product_core/product_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side.iml" filepath="$PROJECT_DIR$/product_side/product_side.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side_commons/product_side_commons.iml" filepath="$PROJECT_DIR$/product_side/product_side_commons/product_side_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side_core/product_side_core.iml" filepath="$PROJECT_DIR$/product_side/product_side_core/product_side_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_side/product_side_test/product_side_test.iml" filepath="$PROJECT_DIR$/product_side/product_side_test/product_side_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product_test/product_test.iml" filepath="$PROJECT_DIR$/product/product_test/product_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user_commons/user_commons.iml" filepath="$PROJECT_DIR$/user/user_commons/user_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user_core/user_core.iml" filepath="$PROJECT_DIR$/user/user_core/user_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user_test/user_test.iml" filepath="$PROJECT_DIR$/user/user_test/user_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/weixinpay/weixinpay.iml" filepath="$PROJECT_DIR$/pay/weixinpay/weixinpay.iml" />
+    </modules>
+  </component>
+</project>

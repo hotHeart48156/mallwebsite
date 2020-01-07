@@ -8,6 +8,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_experience", schema = "activiti", catalog = "")
+//被秒杀
 public class SmsExperienceEntity {
     private long id;
     private long userId;

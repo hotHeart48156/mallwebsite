@@ -6,6 +6,7 @@ import java.sql.Date;
 
 @Entity
 @Table(name = "sms_user_red_packet", schema = "activiti", catalog = "")
+//用户红包
 public class SmsUserRedPacketEntity {
     private int id;
     private int redPacketId;

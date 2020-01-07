@@ -35,7 +35,10 @@
         <option value="$PROJECT_DIR$/admin/app/pom.xml" />
         <option value="$PROJECT_DIR$/admin/domain/pom.xml" />
         <option value="$PROJECT_DIR$/admin/web/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/alipay_test/pom.xml" />
+=======
+>>>>>>> origina/master
         <option value="$PROJECT_DIR$/order/app/pom.xml" />
         <option value="$PROJECT_DIR$/order/domain/pom.xml" />
         <option value="$PROJECT_DIR$/order/web/pom.xml" />

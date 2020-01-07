@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_sign_activity", schema = "activiti", catalog = "")
+//活动
 public class SmsSignActivityEntity {
     private long id;
     private String image;

@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "sms_coupon_product_relation", schema = "activiti", catalog = "")
+//优惠券和产品关系表
 public class SmsCouponProductRelationEntity {
     private long id;
     private Long couponId;

@@ -11,6 +11,7 @@
         <module>activite_test</module>
         <module>activite_core</module>
         <module>activite_commons</module>
+
     </modules>
     <dependencies>
         <dependency>

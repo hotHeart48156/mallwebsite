@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.orders.entity.CompanyAddress">
+        <table name="oms_company_address" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="addressName">
+                <column name="address_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="sendStatus">
+                <column name="send_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="receiveStatus">
+                <column name="receive_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="name">
+                <column name="name" nullable="false" length="64"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" nullable="false" length="64"/>
+            </basic>
+            <basic name="province">
+                <column name="province" nullable="false" length="64"/>
+            </basic>
+            <basic name="city">
+                <column name="city" nullable="false" length="64"/>
+            </basic>
+            <basic name="region">
+                <column name="region" nullable="false" length="64"/>
+            </basic>
+            <basic name="detailAddress">
+                <column name="detail_address" nullable="false" length="200"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

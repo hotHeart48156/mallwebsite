@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_share", schema = "activiti", catalog = "")
+//分享
 public class SmsShareEntity {
     private long id;
     private String userId;

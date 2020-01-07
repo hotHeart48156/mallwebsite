@@ -1,5 +1,7 @@
 package com.smart.website.product_side.entity;
 
+import com.smart.website.account.domain.Entity;
+
 @Entity
 @Table(name = "cms_parter", schema = "product_side", catalog = "")
 public class CmsParterEntity {

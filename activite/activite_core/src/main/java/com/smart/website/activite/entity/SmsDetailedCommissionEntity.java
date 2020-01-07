@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_detailed_commission", schema = "activiti", catalog = "")
+//佣金
 public class SmsDetailedCommissionEntity {
     private long id;
     private Long userid;

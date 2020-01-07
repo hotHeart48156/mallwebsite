@@ -8,9 +8,21 @@
 
     <name>product</name>
     <modules>
+        <
+        <
+        <
+        <
+        <
+        <
+        < HEAD
         <module>product_commons</module>
         <module>product_test</module>
         <module>product_core</module>
+        =======
+        <module>product_app</module>
+        <module>product_domain</module>
+        <module>product_web</module>
+        >>>>>>> origina/master
     </modules>
     <dependencies>
         <dependency>

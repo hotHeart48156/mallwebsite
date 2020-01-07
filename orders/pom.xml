@@ -8,9 +8,11 @@
 
     <name>orders</name>
     <modules>
-        <module>orders_commons</module>
+
+    <module>orders_commons</module>
         <module>orders_test</module>
         <module>orders_core</module>
+
     </modules>
     <dependencies>
         <dependency>

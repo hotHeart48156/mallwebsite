@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: root
+    password: yangbiao
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/account?characterEncoding=utf8&useSSL=false
+    hikari:
+      auto-commit:
+      username: root
+      password: yangbiao
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.smart.website.generate.entity
+  configuration:
+    global-config:
+      dbConfig:
+        idType: auto
+        fieldStrategy: not_empty
+        tableUnderline: true
+        dbType: mysql
+        logicDeleteValue: true
+        capitalMode: false
+        columnFormat:
+        schema: account
+      metaObjectHandler:
+      workerId: 2
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    result-map-names:
+      - smart
+    log-impl: "slf4j"
+
+
+  global-config:
+    banner: false
+    db-config:
+      table-underline: true
+logging:
+  level: debug
+

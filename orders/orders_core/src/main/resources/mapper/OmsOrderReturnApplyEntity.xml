@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.orders.entity.OrderReturnApply">
+        <table name="oms_order_return_apply" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="orderId">
+                <column name="order_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="companyAddressId">
+                <column name="company_address_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="orderSn">
+                <column name="order_sn" nullable="false" length="64"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="memberUsername">
+                <column name="member_username" nullable="false" length="64"/>
+            </basic>
+            <basic name="returnAmount">
+                <column name="return_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="returnName">
+                <column name="return_name" nullable="false" length="100"/>
+            </basic>
+            <basic name="returnPhone">
+                <column name="return_phone" nullable="false" length="100"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="handleTime">
+                <column name="handle_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="productPic">
+                <column name="product_pic" nullable="false" length="500"/>
+            </basic>
+            <basic name="productName">
+                <column name="product_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="productBrand">
+                <column name="product_brand" nullable="false" length="200"/>
+            </basic>
+            <basic name="productAttr">
+                <column name="product_attr" nullable="false" length="500"/>
+            </basic>
+            <basic name="productCount">
+                <column name="product_count" nullable="false" precision="11"/>
+            </basic>
+            <basic name="productPrice">
+                <column name="product_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="productRealPrice">
+                <column name="product_real_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="reason">
+                <column name="reason" nullable="false" length="200"/>
+            </basic>
+            <basic name="description">
+                <column name="description" nullable="false" length="500"/>
+            </basic>
+            <basic name="proofPics">
+                <column name="proof_pics" nullable="false" length="1000"/>
+            </basic>
+            <basic name="handleNote">
+                <column name="handle_note" nullable="false" length="500"/>
+            </basic>
+            <basic name="handleMan">
+                <column name="handle_man" nullable="false" length="100"/>
+            </basic>
+            <basic name="receiveMan">
+                <column name="receive_man" nullable="false" length="100"/>
+            </basic>
+            <basic name="receiveTime">
+                <column name="receive_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="receiveNote">
+                <column name="receive_note" nullable="false" length="500"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

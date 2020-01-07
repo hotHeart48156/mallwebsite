@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_diy_page", schema = "activiti", catalog = "")
+//自定义页面
 public class SmsDiyPageEntity {
     private long id;
     private Integer type;

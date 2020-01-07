@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_group_member", schema = "activiti", catalog = "")
+//团购成员
 public class SmsGroupMemberEntity {
     private long id;
     private Long groupId;

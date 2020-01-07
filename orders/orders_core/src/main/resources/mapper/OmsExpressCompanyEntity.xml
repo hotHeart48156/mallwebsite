@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.orders.entity.ExpressCompany">
+        <table name="oms_express_company" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="ID" precision="11"/>
+            </id>
+            <basic name="expressCorpId">
+                <column name="EXPRESS_CORP_ID" length="32"/>
+            </basic>
+            <basic name="expressCorpName">
+                <column name="EXPRESS_CORP_NAME" length="64"/>
+            </basic>
+            <basic name="status">
+                <column name="STATUS" precision="4"/>
+            </basic>
+            <basic name="logoUrl">
+                <column name="LOGO_URL" nullable="false" length="32"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

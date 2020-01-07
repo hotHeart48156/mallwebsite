@@ -8,9 +8,11 @@
 
     <name>admin</name>
     <modules>
-        <module>admin_commons</module>
+
+    <module>admin_commons</module>
         <module>admin_test</module>
         <module>admin_core</module>
+
     </modules>
     <dependencies>
         <dependency>

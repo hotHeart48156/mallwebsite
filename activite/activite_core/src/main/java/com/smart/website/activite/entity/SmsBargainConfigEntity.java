@@ -8,6 +8,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_bargain_config", schema = "activiti", catalog = "")
+//讨价还价
 public class SmsBargainConfigEntity {
     private long id;
     private long plugInsId;

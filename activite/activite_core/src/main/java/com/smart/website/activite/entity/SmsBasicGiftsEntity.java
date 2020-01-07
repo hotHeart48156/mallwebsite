@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "sms_basic_gifts", schema = "activiti", catalog = "")
 @IdClass(SmsBasicGiftsEntityPK.class)
+//送礼
 public class SmsBasicGiftsEntity {
     private int storeId;
     private long id;

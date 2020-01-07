@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_sign_record", schema = "activiti", catalog = "")
+//登录记录
 public class SmsSignRecordEntity {
     private long id;
     private long userId;

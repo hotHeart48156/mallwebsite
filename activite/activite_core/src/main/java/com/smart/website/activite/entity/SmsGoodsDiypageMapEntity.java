@@ -7,6 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "sms_goods_diypage_map", schema = "activiti", catalog = "")
+//商品到diy页面的映射
 public class SmsGoodsDiypageMapEntity {
     private long id;
     private Long goodsId;

@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "sms_flash_promotion_product_relation", schema = "activiti", catalog = "")
+//秒杀和产产品关系
 public class SmsFlashPromotionProductRelationEntity {
     private long id;
     private Long flashPromotionId;

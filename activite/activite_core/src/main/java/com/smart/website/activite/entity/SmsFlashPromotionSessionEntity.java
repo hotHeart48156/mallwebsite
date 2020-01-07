@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_flash_promotion_session", schema = "activiti", catalog = "")
+//秒杀session
 public class SmsFlashPromotionSessionEntity {
     private long id;
     private String name;

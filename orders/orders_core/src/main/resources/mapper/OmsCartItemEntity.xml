@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.orders.entity.CartItem">
+        <table name="oms_cart_item" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productSkuId">
+                <column name="product_sku_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="memberId">
+                <column name="member_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="quantity">
+                <column name="quantity" nullable="false" precision="11"/>
+            </basic>
+            <basic name="price">
+                <column name="price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="sp1">
+                <column name="sp1" nullable="false" length="200"/>
+            </basic>
+            <basic name="sp2">
+                <column name="sp2" nullable="false" length="200"/>
+            </basic>
+            <basic name="sp3">
+                <column name="sp3" nullable="false" length="200"/>
+            </basic>
+            <basic name="productPic">
+                <column name="product_pic" nullable="false" length="1000"/>
+            </basic>
+            <basic name="productName">
+                <column name="product_name" nullable="false" length="500"/>
+            </basic>
+            <basic name="productSubTitle">
+                <column name="product_sub_title" nullable="false" length="500"/>
+            </basic>
+            <basic name="productSkuCode">
+                <column name="product_sku_code" nullable="false" length="200"/>
+            </basic>
+            <basic name="memberNickname">
+                <column name="member_nickname" nullable="false" length="500"/>
+            </basic>
+            <basic name="createDate">
+                <column name="create_date" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="modifyDate">
+                <column name="modify_date" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="deleteStatus">
+                <column name="delete_status" nullable="false" precision="1"/>
+            </basic>
+            <basic name="productCategoryId">
+                <column name="product_category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productBrand">
+                <column name="product_brand" nullable="false" length="200"/>
+            </basic>
+            <basic name="productSn">
+                <column name="product_sn" nullable="false" length="200"/>
+            </basic>
+            <basic name="productAttr">
+                <column name="product_attr" nullable="false" length="500"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="checked">
+                <column name="checked" nullable="false" precision="11"/>
+            </basic>
+            <basic name="storeName">
+                <column name="store_name" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

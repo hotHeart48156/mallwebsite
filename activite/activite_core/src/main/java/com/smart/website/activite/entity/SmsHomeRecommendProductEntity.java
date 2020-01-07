@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "sms_home_recommend_product", schema = "activiti", catalog = "")
+//首页推荐产品
 public class SmsHomeRecommendProductEntity {
     private long id;
     private Long productId;

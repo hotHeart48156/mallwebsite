@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_coupon_history", schema = "activiti", catalog = "")
+//优惠券历史
 public class SmsCouponHistoryEntity {
     private long id;
     private Long couponId;

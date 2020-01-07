@@ -8,9 +8,11 @@
 
     <name>account</name>
     <modules>
-        <module>account_test</module>
+
+    <module>account_test</module>
         <module>account_core</module>
         <module>account_commons</module>
+
     </modules>
     <dependencies>
         <dependency>

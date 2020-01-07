@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_paimai_log", schema = "activiti", catalog = "")
+//拍卖日志
 public class SmsPaimaiLogEntity {
     private int id;
     private Long memberId;

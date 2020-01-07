@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="2.0">
+
+    <entity class="com.smart.website.orders.entity.OrderItem">
+        <table name="oms_order_item" schema="orders" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="orderId">
+                <column name="order_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="orderSn">
+                <column name="order_sn" nullable="false" length="64"/>
+            </basic>
+            <basic name="productId">
+                <column name="product_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productPic">
+                <column name="product_pic" nullable="false" length="500"/>
+            </basic>
+            <basic name="productName">
+                <column name="product_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="productBrand">
+                <column name="product_brand" nullable="false" length="200"/>
+            </basic>
+            <basic name="productSn">
+                <column name="product_sn" nullable="false" length="64"/>
+            </basic>
+            <basic name="productPrice">
+                <column name="product_price" nullable="false" precision="2"/>
+            </basic>
+            <basic name="productQuantity">
+                <column name="product_quantity" nullable="false" precision="11"/>
+            </basic>
+            <basic name="productSkuId">
+                <column name="product_sku_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="productSkuCode">
+                <column name="product_sku_code" nullable="false" length="50"/>
+            </basic>
+            <basic name="productCategoryId">
+                <column name="product_category_id" nullable="false" precision="20"/>
+            </basic>
+            <basic name="sp1">
+                <column name="sp1" nullable="false" length="100"/>
+            </basic>
+            <basic name="sp2">
+                <column name="sp2" nullable="false" length="100"/>
+            </basic>
+            <basic name="sp3">
+                <column name="sp3" nullable="false" length="100"/>
+            </basic>
+            <basic name="promotionName">
+                <column name="promotion_name" nullable="false" length="200"/>
+            </basic>
+            <basic name="promotionAmount">
+                <column name="promotion_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="couponAmount">
+                <column name="coupon_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="integrationAmount">
+                <column name="integration_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="realAmount">
+                <column name="real_amount" nullable="false" precision="2"/>
+            </basic>
+            <basic name="giftIntegration">
+                <column name="gift_integration" nullable="false" precision="11"/>
+            </basic>
+            <basic name="giftGrowth">
+                <column name="gift_growth" nullable="false" precision="11"/>
+            </basic>
+            <basic name="productAttr">
+                <column name="product_attr" nullable="false" length="500"/>
+            </basic>
+            <basic name="storeId">
+                <column name="store_id" nullable="false" precision="11"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="4"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" precision="4"/>
+            </basic>
+            <basic name="storeName">
+                <column name="store_name" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "sms_home_advertise", schema = "activiti", catalog = "")
+//首页广告
 public class SmsHomeAdvertiseEntity {
     private long id;
     private String name;

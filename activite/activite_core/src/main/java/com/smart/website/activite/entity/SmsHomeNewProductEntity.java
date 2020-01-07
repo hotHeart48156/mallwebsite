@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "sms_home_new_product", schema = "activiti", catalog = "")
+//首页新品
 public class SmsHomeNewProductEntity {
     private long id;
     private Long productId;
